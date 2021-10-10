@@ -10,20 +10,38 @@ header, footer {
   grid-column-end: 13;
 }
 
-main {
-  grid-column-start: 4;
-  grid-column-end: 13;
-}
-
-nav {
+nav, .aside {
   grid-column-start: 1;
   grid-column-end: 4;
 }
 
-main, nav {
+.main {
+  grid-column-start: 4;
+  grid-column-end: 13;
   grid-row-start: 2;
-  grid-row-end: 12;
+  grid-row-end: 4;
+  display: grid;
+  align-items: center;
 }
+
+.nav ul {
+  display: grid;
+  justify-items: center;
+}
+
+.nav ul li, .footer ul li {
+  list-style: none;
+}
+
+.nav ul li a, .footer ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  max-width: 30em;
+}
+
 #pie1, #pie5 {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -42,4 +60,14 @@ main, nav {
 #pie4, #pie8 {
   grid-column-start: 10;
   grid-column-end: 13;
+}
+
+.img {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.main {
+
 }
